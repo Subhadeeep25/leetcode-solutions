@@ -3,7 +3,7 @@ class Solution {
         if(x==0)return x;
         int left=1,right=x,mid=-1;
         while(left<=right){
-            mid=left+(right-left)/2;
+            mid=(left+right)/2;
             if(mid>x/mid)
             right=mid-1;
             else if(mid*mid==x)
