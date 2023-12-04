@@ -11,11 +11,10 @@ public:
         }
         int ans=0;
         for(auto i:mp){
-            if(i.second>=4){
+            if(i.second>1){
                 ans+=fact(i.second-1);
             }
-            else if(i.second>2)ans+=i.second;
-            else if(i.second<=2)ans+=i.second-1;
+            
         }
         return ans;
     }
