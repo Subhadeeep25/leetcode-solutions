@@ -15,14 +15,14 @@ public:
         for(auto i:word2){
             mp2[i]++;
         }
-        for(auto i = mp1.begin(); i != mp1.end(); i++){
-            cout<<i->first<<i->second<<";";
-        }
+        //for(auto i = mp1.begin(); i != mp1.end(); i++){
+        //    cout<<i->first<<i->second<<";";
+        //}
         for(auto i = mp1.begin(); i != mp1.end(); i++){
             bool flag=false;
             for(auto j = mp2.begin(); j != mp2.end(); j++){
                 if(i->second==j->second){
-                    cout<<i->first<<i->second<<" "<<j->first<<j->second<<endl;
+                    //cout<<i->first<<i->second<<" "<<j->first<<j->second<<endl;
                     mp2[j->first]=0;
                     flag=true;
                     break;
