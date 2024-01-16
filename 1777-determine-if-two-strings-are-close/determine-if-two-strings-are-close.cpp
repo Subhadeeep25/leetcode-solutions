@@ -23,7 +23,6 @@ public:
                 }
             }
             if(flag==false){
-                cout<<1;
                 return false;
             }
         }
